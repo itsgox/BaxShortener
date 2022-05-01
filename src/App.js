@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import InputShortener from './components/InputShortener';
+import LinkResult from './components/LinkResult';
+import './css/App.css';
 
 function App() {
+
+  const [inputValue, setInputValue] = useState('')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="hero">
+      <h1>BaxShortener</h1>
+      <h3>Free URL Shortener</h3>
+      <InputShortener setInputValue={setInputValue} />
+      <LinkResult inputValue={inputValue} />
     </div>
   );
 }

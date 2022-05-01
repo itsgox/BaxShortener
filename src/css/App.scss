@@ -1,0 +1,196 @@
+@font-face {
+    font-family: RobotoBold;
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+body {
+    background: #272727;
+}
+
+.empty {
+    font-family: 'RobotoLight';
+    padding: 14px;
+    font-size: 20px;
+    color: #e9e9e9;
+}
+
+.red {
+    color: rgb(255, 98, 98);
+}
+
+.icon {
+    position: relative;
+    top: 3px;
+}
+
+.hero {
+    text-align: center;
+    //background: #272727;
+    color: #E9E9E9;
+    margin-top: 70px;
+    padding: 40px;
+    border-radius: 10px;
+
+    h1 {
+        font-family: 'RobotoBold';
+        color: rgb(100, 255, 155);
+        font-size: 60px;
+        margin: 0;
+    }
+
+    h3 {
+        font-family: 'RobotoLight';
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.input {
+    margin-bottom: 30px;
+
+    input {
+        font-family: 'RobotoLight';
+        font-size: 20px;
+        border: none;
+        outline: none;
+        padding: 14px;
+        margin: 0;
+        border-radius: 8px 0 0 8px;
+        background: #191919;
+        color: #e9e9e9;
+        width: 300px;
+    }
+    button {
+        font-family: 'RobotoBold';
+        font-size: 20px;
+        border: none;
+        outline: none;
+        padding: 14px;
+        margin: 0;
+        border-radius: 0 8px 8px 0;
+        color: #191919;
+        background: rgb(100, 255, 155);
+        cursor: pointer;
+    }
+}
+
+.linkResult {
+    input {
+        font-family: 'RobotoLight';
+        font-size: 20px;
+        border: none;
+        outline: none;
+        padding: 14px;
+        margin: 0;
+        border-radius: 8px 0 0 8px;
+        background: #191919;
+        color: #e9e9e9;
+        width: 300px;
+    }
+    button {
+        font-family: 'RobotoBold';
+        font-size: 20px;
+        border: none;
+        outline: none;
+        padding: 14px;
+        margin: 0;
+        border-radius: 0 8px 8px 0;
+        color: #e9e9e9;
+        background: #313131;
+        cursor: pointer;
+    }
+    button.copied {
+        color: rgb(100, 255, 155);
+    }
+}
+
+@media only screen and (max-width: 565px) {
+
+    .hero {
+        text-align: center;
+        //background: #272727;
+        color: #E9E9E9;
+        margin-top: 30px;
+        padding: 40px;
+        border-radius: 10px;
+    
+        h1 {
+            font-family: 'RobotoBold';
+            color: rgb(100, 255, 155);
+            font-size: 50px;
+            margin: 0;
+        }
+    
+        h3 {
+            font-family: 'RobotoLight';
+            font-size: 20px;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+    }
+    
+    .input {
+        margin-bottom: 30px;
+    
+        input {
+            font-family: 'RobotoLight';
+            font-size: 20px;
+            border: none;
+            outline: none;
+            padding: 14px;
+            margin: 0 0 10px 0;
+            border-radius: 8px;
+            background: #191919;
+            color: #e9e9e9;
+            width: 250px;
+        }
+        button {
+            font-family: 'RobotoBold';
+            font-size: 20px;
+            border: none;
+            outline: none;
+            padding: 14px;
+            margin: 0;
+            border-radius: 8px;
+            color: #191919;
+            background: rgb(100, 255, 155);
+            cursor: pointer;
+        }
+    }
+    
+    .linkResult {
+        input {
+            font-family: 'RobotoLight';
+            font-size: 20px;
+            border: none;
+            outline: none;
+            padding: 14px;
+            margin: 0 0 10px 0;
+            border-radius: 8px;
+            background: #191919;
+            color: #e9e9e9;
+            width: 250px;
+        }
+        button {
+            font-family: 'RobotoBold';
+            font-size: 20px;
+            border: none;
+            outline: none;
+            padding: 14px;
+            margin: 0;
+            border-radius: 8px;
+            color: #e9e9e9;
+            background: #313131;
+            cursor: pointer;
+        }
+        button.copied {
+            color: rgb(100, 255, 155);
+        }
+    }
+}
